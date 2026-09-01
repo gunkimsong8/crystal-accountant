@@ -16,7 +16,7 @@ export default function PrivacyPage() {
         <p>We use enquiry information to respond, understand your needs, maintain appropriate business records, and protect the contact service from abuse. We do not sell your personal information.</p>
         <h2>Service providers</h2>
         <p>Our hosting, form-processing, email, security, and analytics providers may process limited information on our behalf. Final provider names, processing locations, and retention terms will be added before production launch.</p>
-        <h2>Analytics and cookies</h2>
+        <h2 id="analytics">Analytics and cookies</h2>
         <p>Analytics will only be enabled according to the consent requirements applicable to the production website. When enabled, analytics helps us understand website use and improve its effectiveness.</p>
         <h2>Retention and your choices</h2>
         <p>We retain enquiry information only as long as needed for the purposes described above and applicable obligations. You may ask about your information or request an appropriate correction or deletion.</p>

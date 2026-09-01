@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { AnalyticsConsent } from "@/components/AnalyticsConsent";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { siteConfig } from "@/lib/site";
@@ -35,6 +36,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Header />
         <main id="main-content">{children}</main>
         <Footer />
+        <AnalyticsConsent />
       </body>
     </html>
   );

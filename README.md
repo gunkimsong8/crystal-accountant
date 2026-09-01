@@ -23,6 +23,7 @@ Open `http://localhost:3000`.
 | --- | --- |
 | `NEXT_PUBLIC_SITE_URL` | Canonical production URL used in search metadata |
 | `NEXT_PUBLIC_FORM_ENDPOINT` | HTTPS endpoint supplied by the selected static form provider |
+| `NEXT_PUBLIC_GA_ID` | Optional GA4 measurement ID; analytics loads only after consent |
 
 The contact form shows the company email as a fallback until a form endpoint is configured. Test delivery, spam filtering, retention, and the privacy notice with the selected provider before launch.
 

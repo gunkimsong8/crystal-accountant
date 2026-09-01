@@ -210,6 +210,12 @@ p { line-height: 1.7; }
 .resultIcon { border: 1px solid var(--purple); color: var(--purple); display: grid; font-size: 1.5rem; height: 70px; margin-bottom: 40px; place-items: center; transform: rotate(45deg); width: 70px; }
 .resultPage h1 { font-size: clamp(2.8rem, 5vw, 4.5rem); }
 .resultPage p:not(.eyebrow) { color: var(--muted); font-size: 1.1rem; margin: 25px 0 35px; }
+.consentBanner { align-items: center; background: var(--white); border: 1px solid var(--line); bottom: 20px; box-shadow: 0 12px 45px rgba(28,16,36,.17); display: flex; gap: 30px; justify-content: space-between; left: 50%; padding: 20px 24px; position: fixed; transform: translateX(-50%); width: min(760px, calc(100% - 32px)); z-index: 200; }
+.consentBanner p { color: var(--muted); font-size: .78rem; line-height: 1.5; }
+.consentBanner strong { color: var(--ink); font-size: .85rem; }
+.consentBanner a { color: var(--purple); text-decoration: underline; }
+.consentBanner > div { align-items: center; display: flex; flex: 0 0 auto; gap: 14px; }
+.consentDecline { background: transparent; border: 0; color: var(--muted); cursor: pointer; font-size: .76rem; text-decoration: underline; }
 
 .siteFooter { background: #18121d; color: var(--white); padding: 85px 0 30px; }
 .siteFooter .logoMark { border-color: #b99bd9; }
@@ -283,6 +289,8 @@ p { line-height: 1.7; }
   .footerGrid { grid-template-columns: 1fr 1fr; }
   .footerIntro, .footerCta { grid-column: 1 / -1; }
   .footerBottom { flex-direction: column; gap: 10px; }
+  .consentBanner { align-items: stretch; bottom: 10px; flex-direction: column; gap: 14px; }
+  .consentBanner > div { justify-content: space-between; }
 }
 
 @media (prefers-reduced-motion: reduce) {
