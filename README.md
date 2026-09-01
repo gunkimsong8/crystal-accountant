@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Crystal Accounting
 
-## Getting Started
+English-language corporate website for Crystal Accounting, built as a statically exported Next.js application.
 
-First, run the development server:
+## Requirements
+
+- Node.js 20.9 or newer
+- npm
+
+## Local development
 
 ```bash
+cp .env.example .env.local
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Configuration
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Variable | Purpose |
+| --- | --- |
+| `NEXT_PUBLIC_SITE_URL` | Canonical production URL used in search metadata |
+| `NEXT_PUBLIC_FORM_ENDPOINT` | HTTPS endpoint supplied by the selected static form provider |
 
-## Learn More
+The contact form shows the company email as a fallback until a form endpoint is configured. Test delivery, spam filtering, retention, and the privacy notice with the selected provider before launch.
 
-To learn more about Next.js, take a look at the following resources:
+## Content
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Service and insight content is stored in `src/lib/site.ts`. Add an article to the `articles` collection with a unique slug, date, summary, category, reading time, and content sections. Next.js generates the article page and sitemap entry during the build.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Validation and static export
 
-## Deploy on Vercel
+```bash
+npm run lint
+npm run build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The production-ready static site is generated in `out/`. Deploy that directory to any static host with HTTPS and custom-domain support.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Launch checklist
+
+- Confirm the five service scopes and replace draft copy with approved content.
+- Replace placeholder branding with the final logo and CI values.
+- Confirm the canonical domain and hosting.
+- Configure and test the contact-form endpoint and recipient.
+- Have the privacy policy reviewed with confirmed provider and retention details.
+- Add consent-aware analytics and Search Console verification when account details are available.

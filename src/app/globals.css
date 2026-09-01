@@ -9,8 +9,8 @@
   --soft: #f7f5f8;
   --white: #fff;
   --line: #ded9e2;
-  --font-body: Arial, sans-serif;
-  --font-display: Arial, sans-serif;
+  --font-body: "Avenir Next", Avenir, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-display: "Avenir Next", Avenir, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
