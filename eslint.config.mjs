@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Vendored Impeccable skill scripts are not project source.
+    ".claude/**",
   ]),
 ]);
 
