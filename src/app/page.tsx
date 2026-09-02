@@ -8,8 +8,6 @@ export default function Home() {
   return (
     <>
       <section className="homeHero">
-        <div className="heroOrb orbOne" />
-        <div className="heroOrb orbTwo" />
         <div className="shell heroGrid">
           <div className="heroCopy">
             <p className="eyebrow light">Accounting for international business in Thailand</p>
@@ -23,8 +21,8 @@ export default function Home() {
             </div>
           </div>
           <div className="heroGraphic" aria-hidden="true">
-            <div className="crystal crystalBack" />
-            <div className="crystal crystalFront">
+            <div className="triangle triangleBack" />
+            <div className="triangle triangleFront">
               <span>BEYOND</span>
               <strong>EXPECTED</strong>
             </div>

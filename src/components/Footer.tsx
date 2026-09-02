@@ -7,7 +7,7 @@ export function Footer() {
     <footer className="siteFooter">
       <div className="shell footerGrid">
         <div className="footerIntro">
-          <Logo />
+          <Logo variant="white" />
           <p>Clarity for your business in Thailand.</p>
           <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
           <a href="tel:+66916266241">{siteConfig.phone}</a>

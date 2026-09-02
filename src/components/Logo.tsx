@@ -1,15 +1,18 @@
+import Image from "next/image";
 import Link from "next/link";
 
-export function Logo() {
+type LogoProps = {
+  variant?: "color" | "white";
+};
+
+const LOGO_WIDTH = 168;
+const LOGO_HEIGHT = 44;
+
+export function Logo({ variant = "color" }: LogoProps) {
+  const src = variant === "white" ? "/brand/logo-horizontal-white.svg" : "/brand/logo-horizontal.svg";
   return (
     <Link href="/" className="logo" aria-label="Crystal Accounting home">
-      <span className="logoMark" aria-hidden="true">
-        <span />
-      </span>
-      <span className="logoText">
-        <strong>CRYSTAL</strong>
-        <small>ACCOUNTING</small>
-      </span>
+      <Image src={src} alt="" width={LOGO_WIDTH} height={LOGO_HEIGHT} priority />
     </Link>
   );
 }
