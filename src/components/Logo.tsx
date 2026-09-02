@@ -12,7 +12,7 @@ export function Logo({ variant = "color" }: LogoProps) {
   const src = variant === "white" ? "/brand/logo-horizontal-white.svg" : "/brand/logo-horizontal.svg";
   return (
     <Link href="/" className="logo" aria-label="Crystal Accounting home">
-      <Image src={src} alt="" width={LOGO_WIDTH} height={LOGO_HEIGHT} priority />
+      <Image src={src} alt="" width={LOGO_WIDTH} height={LOGO_HEIGHT} priority={variant === "color"} />
     </Link>
   );
 }

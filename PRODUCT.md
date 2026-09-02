@@ -78,10 +78,9 @@ Thai GAAP / TFRS, monthly VAT (PP30), withholding tax (PND 1, 3, 53), corporate 
 Department (RD), BOI incentives, Foreign Business License (FBL), e-Tax invoice and e-Receipt
 registration, statutory annual audit by a licensed CPA.
 
-Site structure in place: Home, About, Services (index plus one page per service), Insights (index
-plus article pages), Contact, Thank You, Privacy Policy, 404. A `/pricing` route is planned and not
-yet built. Service pages follow a fixed shape: problem, scope, ideal client, process, outcomes,
-FAQs, contact CTA.
+Site structure in place: Home, About, Services (index plus one page per service), Pricing, Insights
+(index plus article pages), Contact, Thank You, Privacy Policy, 404. Service pages follow a fixed
+shape: problem, scope, ideal client, process, outcomes, FAQs, contact CTA.
 
 Editorial workflow: articles live as typed data in the repository and ship through the normal deploy,
 so publishing is a commit rather than a CMS session. Roughly one article per month is planned.
@@ -102,9 +101,15 @@ so publishing is a commit rather than a CMS session. Roughly one article per mon
   conversion event fires on the thank-you page.
 - SEO surface: sitemap, `robots.txt`, canonical URLs, per-page metadata, Open Graph, and Organization
   plus service/article structured data. One clear page heading per indexable page.
-- Five services: Accounting & Bookkeeping, Audit Services, Tax Consulting & Planning, Payroll
-  Services, and Company Setup & Assistance. (The spec retires the separate Corporate Compliance page
-  and keeps Payroll standalone for SEO; `src/lib/site.ts` still carries the pre-decision set.)
+- **Decided.** Five services, in this order and under these names: Accounting & Compliance, Audit &
+  Assurance, Tax Advisory, Payroll Services, and Company Setup & Assistance — one page each under
+  `/services/<slug>/`, plus a public `/pricing/` page carrying the 2026 fee tables and their
+  disclaimer. The separate Corporate Compliance page is retired (its scope folds into Accounting &
+  Compliance) and Payroll stays standalone for SEO. `src/lib/services.ts` carries the decided set.
+- **Decided.** The public contact email is `info@crystalaccounting.co.th`, the address given in
+  `docs/00_source/company-profile.md`. It is what ships on the contact page, in the footer, in the
+  privacy policy, and in the contact form's error-recovery message; the individual address
+  `podjanan.k@crystalaccounting.co.th` is not published. `src/lib/site.ts` carries it.
 - Fees are public. Figures, the disclaimer, and "Updated 1/10/2025" are quoted verbatim from
   `docs/00_source/service-fees.md`; numbers are never edited.
 - No secrets, private keys, or service credentials in client-side code.
@@ -116,9 +121,6 @@ so publishing is a commit rather than a CMS session. Roughly one article per mon
 
 - Production domain, DNS ownership, and hosting provider.
 - Form-processing service, recipient mailbox, spam-control method, and data-retention policy.
-- The public contact email. `docs/00_source/company-profile.md` gives
-  `info@crystalaccounting.co.th`; `src/lib/site.ts` currently uses
-  `podjanan.k@crystalaccounting.co.th`. The client has not confirmed which is public.
 - Office phone as a published contact channel, business hours, and whether the registered address is
   shown as a visitable office.
 - Named team members or individual credentials beyond the aggregate partner statement.
