@@ -21,7 +21,7 @@
 - Commit format: `<type>: <description>` with types feat, fix, refactor, docs, test, chore. No Co-Authored-By trailers.
 - `npm run lint` and `npm run build` must pass at the end of every task.
 - Scratch/intermediate files go under the session scratchpad, never `/tmp` and never the repo.
-- Client email in the deck is `info@crystalaccounting.co.th`; the site currently uses a personal address. Task 7 switches to the deck address.
+- Client email in the deck is `info@crystalaccounting.co.th`; the site currently uses a personal address. Task 8 switches to the deck address.
 
 ---
 
@@ -45,11 +45,11 @@
 | `src/app/page.tsx` | Home hero motif | 6 |
 | `src/lib/services.ts`, `src/lib/articles.ts`, `src/lib/site.ts` | Content split; `site.ts` keeps `siteConfig`, `formatDate`, re-exports | 7 |
 | `src/lib/__tests__/services.test.ts` | Slug and shape tests | 7 |
-| `src/app/about/page.tsx`, `src/app/contact/page.tsx`, `src/components/Footer.tsx` | Deck content, real contact details | 7 |
-| `src/lib/fees.ts`, `src/lib/__tests__/fees.test.ts` | Fee data + tests | 7 |
-| `src/app/pricing/page.tsx`, `src/components/FeeTable.tsx` | Pricing route | 7 |
-| `src/components/Header.tsx`, `src/app/sitemap.ts` | Add Pricing link and route | 7 |
-| `docs/01_overview/02_PROGRESS.md` | Progress vs overview | 7 |
+| `src/app/about/page.tsx`, `src/app/contact/page.tsx`, `src/components/Footer.tsx` | Deck content, real contact details | 8 |
+| `src/lib/fees.ts`, `src/lib/__tests__/fees.test.ts` | Fee data + tests | 9 |
+| `src/app/pricing/page.tsx`, `src/components/FeeTable.tsx` | Pricing route | 9 |
+| `src/components/Header.tsx`, `src/app/sitemap.ts` | Add Pricing link and route | 9 |
+| `docs/01_overview/02_PROGRESS.md` | Progress vs overview | 11 |
 
 Task order and dependencies: 1, 2, 3 (P0, independent of each other) → 4 → 5 → 6 → 7, 8, 9 (independent, after 6) → 10 → 11.
 
@@ -62,7 +62,7 @@ Task order and dependencies: 1, 2, 3 (P0, independent of each other) → 4 → 5
 - Create: `docs/00_source/service-fees.md`
 
 **Interfaces:**
-- Produces: two Markdown files that Tasks 3, 4, 9, 10 quote from. Fee table headings in `service-fees.md` must be exactly: `## Monthly Accounting Service Fee`, `## Annual Tax Filing`, `## Audit Service Fee`, `## Yearly Accounting Service Fee`.
+- Produces: two Markdown files that Tasks 3, 4, 8, 9 quote from. Fee table headings in `service-fees.md` must be exactly: `## Monthly Accounting Service Fee`, `## Annual Tax Filing`, `## Audit Service Fee`, `## Yearly Accounting Service Fee`.
 
 - [ ] **Step 1: Dump the deck text**
 
@@ -1157,7 +1157,7 @@ git commit -m "feat: align services with company profile and split content modul
 
 ---
 
-### Task 7: About, Contact, and Footer content from the deck
+### Task 8: About, Contact, and Footer content from the deck
 
 **Files:**
 - Modify: `src/app/about/page.tsx`, `src/app/contact/page.tsx`, `src/components/Footer.tsx`, `src/app/globals.css` (add `.factList`, `.tagList` rules)
@@ -1318,7 +1318,7 @@ git commit -m "feat: add vision, values, countries, industries, and official con
 
 ---
 
-### Task 7: Pricing page with the fee schedule
+### Task 9: Pricing page with the fee schedule
 
 **Files:**
 - Create: `src/lib/fees.ts`, `src/lib/__tests__/fees.test.ts`, `src/components/FeeTable.tsx`, `src/app/pricing/page.tsx`
@@ -1624,10 +1624,10 @@ git commit -m "feat: add pricing page with the published 2026 fee schedule"
 
 ---
 
-### Task 7: Impeccable audit and polish
+### Task 10: Impeccable audit and polish
 
 **Files:**
-- Modify: whatever the audit and polish passes touch (expected: `src/app/globals.css`, components). No content or token changes: tokens stay exactly as in `BRAND.md`; copy stays as in Tasks 8–10.
+- Modify: whatever the audit and polish passes touch (expected: `src/app/globals.css`, components). No content or token changes: tokens stay exactly as in `BRAND.md`; copy stays as in Tasks 7–9.
 
 **Interfaces:**
 - Consumes: `DESIGN.md`, `PRODUCT.md` from Task 4.
@@ -1664,13 +1664,13 @@ git commit -m "refactor: apply impeccable audit and polish fixes"
 
 ---
 
-### Task 7: Progress tracker against the project overview
+### Task 11: Progress tracker against the project overview
 
 **Files:**
 - Create: `docs/01_overview/02_PROGRESS.md`
 
 **Interfaces:**
-- Consumes: `docs/01_overview/01_PROJECT_OVERVIEW.md` sections 6, 8, 10, 12, 14; the state of the repo after Task 7.
+- Consumes: `docs/01_overview/01_PROJECT_OVERVIEW.md` sections 6, 8, 10, 12, 14; the state of the repo after Task 10.
 
 - [ ] **Step 1: Verify the facts you will record**
 
@@ -1760,8 +1760,8 @@ Tracks `01_PROJECT_OVERVIEW.md`. Status: **Done** / **Partial** / **Open**. Upda
 | 5 | Form service, mailbox, spam, retention | Open |
 | 6 | Privacy/cookie requirements | Open |
 | 7 | GA4, Search Console, Ads access | Open |
-| 7 | Article publishing owner | Open |
-| 7 | Launch approver | Open |
+| 8 | Article publishing owner | Open |
+| 9 | Launch approver | Open |
 
 ## Next actions
 
@@ -1783,6 +1783,6 @@ git commit -m "docs: add progress tracker against the project overview"
 ## Self-review notes
 
 - Spec §4A → Tasks 1–3 (horizontal lockup added because the stacked logo does not fit an 84px header; recorded in `BRAND.md`).
-- Spec §4B → Task 4. Spec §4C → Tasks 5–6. Spec §4D1 → Tasks 8–9. Spec §4D2 → Task 7. Spec §4E → Task 7. Spec §4F → Task 7.
-- Spec §5 verification → build/lint/test per task, screenshots in Tasks 5, 6, 9, 10, 11, detector in Task 7.
-- Names used consistently: `services` (Task 7) consumed by Footer/sitemap; `siteConfig.phoneHref`, `address`, `taxId`, `legalName` (Task 7) consumed in Task 7; `feeTables`, `formatThb`, `feeDisclaimer`, `feesUpdated` (Task 7) consumed by `FeeTable` and the pricing page; `Logo` `variant` prop (Task 6) consumed in Task 7.
+- Spec §4B → Task 4. Spec §4C → Tasks 5–6. Spec §4D1 → Tasks 7–8. Spec §4D2 → Task 9. Spec §4E → Task 10. Spec §4F → Task 11.
+- Spec §5 verification → build/lint/test per task, screenshots in Tasks 5, 6, 8, 9, 10, detector in Task 10.
+- Names used consistently: `services` (Task 7) consumed by Footer/sitemap; `siteConfig.phoneHref`, `address`, `taxId`, `legalName` (Task 7) consumed in Task 8; `feeTables`, `formatThb`, `feeDisclaimer`, `feesUpdated` (Task 9) consumed by `FeeTable` and the pricing page; `Logo` `variant` prop (Task 6) consumed in Task 8.
