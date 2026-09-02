@@ -8,9 +8,10 @@ export function Footer() {
       <div className="shell footerGrid">
         <div className="footerIntro">
           <Logo variant="white" />
-          <p>Clarity for your business in Thailand.</p>
+          <p>Let us take care of your company, so you can focus on growing your business in Thailand.</p>
           <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
-          <a href="tel:+66916266241">{siteConfig.phone}</a>
+          <a href={siteConfig.phoneHref}>{siteConfig.phone}</a>
+          <address>{siteConfig.address.join(", ")}</address>
         </div>
         <div>
           <h2>Explore</h2>
@@ -36,7 +37,7 @@ export function Footer() {
         </div>
       </div>
       <div className="shell footerBottom">
-        <p>© {new Date().getFullYear()} Crystal Accounting. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} {siteConfig.legalName}. Tax ID {siteConfig.taxId}. All rights reserved.</p>
         <Link href="/privacy/">Privacy policy</Link>
       </div>
     </footer>

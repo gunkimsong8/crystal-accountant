@@ -185,6 +185,7 @@ p { line-height: 1.7; }
 .contactDirect { border-top: 1px solid rgba(255,255,255,.2); display: grid; font-size: .88rem; gap: 10px; grid-template-columns: 80px 1fr; margin-top: 55px; padding-top: 30px; }
 .contactDirect span { color: var(--lilac); }
 .contactDirect a:hover { text-decoration: underline; }
+.contactDirect address { font-style: normal; line-height: 1.6; }
 .formPanel { background: var(--white); color: var(--navy); padding: 45px; }
 .formPanel h2 { font-size: 2rem; }
 .formPanel > p { color: var(--muted); font-size: .8rem; margin: 8px 0 28px; }
@@ -217,6 +218,7 @@ p { line-height: 1.7; }
 .footerGrid { display: grid; gap: 55px; grid-template-columns: 1.15fr .65fr .9fr 1.5fr; padding-bottom: 70px; }
 .footerIntro p { color: var(--on-dark-muted); font-size: .85rem; margin: 24px 0 17px; }
 .footerIntro > a { color: var(--on-dark-muted); display: block; font-size: .82rem; margin: 8px 0; }
+.footerIntro address { color: var(--on-dark-muted); font-size: .8rem; font-style: normal; line-height: 1.6; margin-top: 12px; }
 .footerGrid > div:not(.footerIntro):not(.footerCta) { display: flex; flex-direction: column; gap: 13px; }
 .footerGrid > div > h2 { color: var(--on-dark-muted); font-family: var(--font-body); font-size: .69rem; letter-spacing: .13em; margin-bottom: 10px; text-transform: uppercase; }
 .footerGrid > div > a { color: var(--on-dark-muted); font-size: .8rem; }
@@ -224,6 +226,13 @@ p { line-height: 1.7; }
 .footerCta { border-left: 1px solid rgba(255,255,255,.14); padding-left: 45px; }
 .footerCta h2 { font-size: 1.65rem; }
 .footerBottom { border-top: 1px solid rgba(255,255,255,.14); color: var(--on-dark-muted); display: flex; font-size: .7rem; justify-content: space-between; padding-top: 26px; }
+
+.valueGridFive { grid-template-columns: repeat(5, 1fr); }
+.valueGridFive h3 { font-size: 1.35rem; margin-top: 55px; }
+.tagList { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; margin-top: 28px; }
+.tagList li { border: 1px solid var(--line); color: var(--navy); font-size: .82rem; font-weight: 600; padding: 9px 14px; }
+.factList { list-style: none; padding-top: 44px; }
+.factList li { border-bottom: 1px solid var(--line); color: var(--muted); font-size: 1rem; padding: 16px 0; }
 
 @media (max-width: 900px) {
   .section { padding: 85px 0; }
@@ -242,6 +251,7 @@ p { line-height: 1.7; }
   .serviceCard > div { gap: 20px; grid-template-columns: .7fr 1fr; }
   .serviceCard .textLink { grid-column: 2; }
   .valueGrid { grid-template-columns: 1fr 1fr; }
+  .valueGridFive { grid-template-columns: 1fr 1fr; }
   .articleGrid { grid-template-columns: 1fr 1fr; }
   .articleCard.featured { grid-column: span 2; }
   .processGrid { grid-template-columns: repeat(3, 1fr); }
@@ -269,6 +279,7 @@ p { line-height: 1.7; }
   .serviceCard h3 { font-size: 1.45rem; }
   .serviceCard p { margin-top: 14px; }
   .articleGrid, .valueGrid, .processGrid, .outcomeGrid { grid-template-columns: 1fr; }
+  .valueGridFive { grid-template-columns: 1fr; }
   .articleCard.featured { grid-column: auto; }
   .ctaBandInner { align-items: flex-start; flex-direction: column; }
   .outcomeGrid div, .outcomeGrid div:first-child { border: 0; border-bottom: 1px solid rgba(0,31,61,.12); min-height: 75px; padding-inline: 10px; }

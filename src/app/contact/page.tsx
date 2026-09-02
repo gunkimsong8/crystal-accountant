@@ -16,8 +16,10 @@ export default function ContactPage() {
           <h1>Tell us what your business needs next.</h1>
           <p>Share a little about your company and the support you are looking for. We will follow up in English to understand the details.</p>
           <div className="contactDirect">
-            <span>Email us</span><a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
-            <span>Call us</span><a href="tel:+66916266241">{siteConfig.phone}</a>
+            <span>Email</span><a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
+            <span>Phone</span><a href={siteConfig.phoneHref}>{siteConfig.phone}</a>
+            <span>Office</span>
+            <address>{siteConfig.address.map((line) => <span key={line}>{line}<br /></span>)}</address>
           </div>
         </div>
         <div className="formPanel">
