@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Script from "next/script";
 import { useSyncExternalStore } from "react";
 
@@ -46,7 +47,7 @@ export function AnalyticsConsent() {
       )}
       {consent === null && (
         <aside className="consentBanner" aria-label="Analytics preference">
-          <p><strong>Help us improve this website</strong><br />With your permission, we use analytics to understand which pages are useful. <a href="/privacy/#analytics">Learn more</a>.</p>
+          <p><strong>Help us improve this website</strong><br />With your permission, we use analytics to understand which pages are useful. <Link href="/privacy/#analytics">Learn more</Link>.</p>
           <div>
             <button type="button" className="button buttonSmall" onClick={() => choose("accepted")}>Accept analytics</button>
             <button type="button" className="consentDecline" onClick={() => choose("declined")}>Decline</button>
