@@ -337,7 +337,7 @@ The signature component. Services are not cards — they are ledger rows. A 1px 
 
 - **Style:** Paper Tint fill, transparent 1px border with only the bottom edge coloured, `0` radius, 50px minimum height, 12px padding. The field reads as a ruled line on tinted paper rather than a box.
 - **Focus:** ground flips to Page White and all four borders become Crystal Violet; the native outline is suppressed in favour of the system focus ring.
-- **Label:** 0.79rem Montserrat 600 Slate Grey-Blue, stacked 8px above the field, with the required asterisk marked `aria-hidden` and the requirement carried by the `required` attribute.
+- **Label:** 0.84rem Montserrat 600 Slate Grey-Blue (the Action step), stacked 8px above the field, with the required asterisk marked `aria-hidden` and the requirement carried by the `required` attribute.
 - **Error:** a `role="alert"` panel in Correction Red on Correction Wash at 0.82rem, naming the failure and offering the firm's email as the recovery path.
 
 ### Fee table

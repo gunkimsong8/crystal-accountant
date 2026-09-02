@@ -106,6 +106,10 @@ so publishing is a commit rather than a CMS session. Roughly one article per mon
   `/services/<slug>/`, plus a public `/pricing/` page carrying the 2026 fee tables and their
   disclaimer. The separate Corporate Compliance page is retired (its scope folds into Accounting &
   Compliance) and Payroll stays standalone for SEO. `src/lib/services.ts` carries the decided set.
+- **Published, pending confirmation.** The office phone `+66 91 626 6241` ships as a contact channel
+  on the contact page and in the footer (`siteConfig.phone` / `siteConfig.phoneHref`), carried over
+  from the earlier build. It is live on the site, but the client has not confirmed it as the public
+  number, so it is recorded here as shipped rather than as verified.
 - **Decided.** The public contact email is `info@crystalaccounting.co.th`, the address given in
   `docs/00_source/company-profile.md`. It is what ships on the contact page, in the footer, in the
   privacy policy, and in the contact form's error-recovery message; the individual address
@@ -121,8 +125,7 @@ so publishing is a commit rather than a CMS session. Roughly one article per mon
 
 - Production domain, DNS ownership, and hosting provider.
 - Form-processing service, recipient mailbox, spam-control method, and data-retention policy.
-- Office phone as a published contact channel, business hours, and whether the registered address is
-  shown as a visitable office.
+- Business hours, and whether the registered address is shown as a visitable office.
 - Named team members or individual credentials beyond the aggregate partner statement.
 - GA4, Search Console, and advertising account ownership.
 - Who approves and publishes monthly articles.

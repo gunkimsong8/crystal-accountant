@@ -43,7 +43,7 @@ All pairs pass 4.5:1. Ratios are enforced by `src/lib/__tests__/tokens.test.ts`.
 
 | Role | Face | Weights | Notes |
 |---|---|---|---|
-| Display (`h1`, `h2`, blockquotes) | Frank Ruhl Libre | 400, 500, 700 | serif from the wordmark |
+| Display (`h1`, `h2`, blockquotes) | Frank Ruhl Libre | 400, 500 | serif from the wordmark |
 | Body, `h3`, eyebrows, buttons, nav, tables | Montserrat | 400, 500, 600, 700 | deck heading face; substitutes Glacial Indifference |
 
 Both are self-hosted through `next/font/google`. Eyebrows: Montserrat 700, uppercase, `letter-spacing: .16em`.
