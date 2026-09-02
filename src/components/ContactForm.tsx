@@ -2,6 +2,7 @@
 
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
+import { siteConfig } from "@/lib/site";
 
 const endpoint = process.env.NEXT_PUBLIC_FORM_ENDPOINT;
 
@@ -55,11 +56,11 @@ export function ContactForm() {
         How can we help? <span aria-hidden="true">*</span>
         <select name="service" defaultValue="" required>
           <option value="" disabled>Select a service</option>
-          <option>Accounting &amp; Bookkeeping</option>
-          <option>Audit Services</option>
-          <option>Tax Consulting &amp; Planning</option>
+          <option>Accounting &amp; Compliance</option>
+          <option>Audit &amp; Assurance</option>
+          <option>Tax Advisory</option>
           <option>Payroll Services</option>
-          <option>Corporate Compliance</option>
+          <option>Company Setup &amp; Assistance</option>
           <option>Something else</option>
         </select>
       </label>
@@ -80,7 +81,7 @@ export function ContactForm() {
       {status === "error" && (
         <p className="formError" role="alert">
           We couldn&apos;t send your enquiry. Please email us at{" "}
-          <a href="mailto:podjanan.k@crystalaccounting.co.th">podjanan.k@crystalaccounting.co.th</a>.
+          <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>.
         </p>
       )}
     </form>

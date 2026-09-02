@@ -21,7 +21,7 @@ export function Footer() {
         </div>
         <div>
           <h2>Services</h2>
-          {services.slice(0, 4).map((service) => (
+          {services.map((service) => (
             <Link href={`/services/${service.slug}/`} key={service.slug}>
               {service.shortTitle}
             </Link>

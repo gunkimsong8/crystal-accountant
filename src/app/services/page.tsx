@@ -6,7 +6,7 @@ import { services } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Accounting Services in Thailand",
-  description: "Accounting, audit, tax, payroll, and corporate compliance services for international businesses in Thailand.",
+  description: "Accounting and compliance, audit and assurance, tax advisory, payroll, and company setup services for international businesses in Thailand.",
 };
 
 export default function ServicesPage() {

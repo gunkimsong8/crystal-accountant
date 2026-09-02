@@ -4,7 +4,7 @@ import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Talk to Crystal Accounting about accounting, tax, audit, payroll, or corporate compliance support in Thailand.",
+  description: "Talk to Crystal Accounting about accounting, audit, tax, payroll, or company setup support in Thailand.",
 };
 
 export default function ContactPage() {
