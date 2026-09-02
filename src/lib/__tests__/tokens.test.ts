@@ -17,6 +17,7 @@ const pairs: [keyof typeof BRAND_TOKENS, keyof typeof BRAND_TOKENS][] = [
   ["navy", "lavender"],
   ["muted", "soft"],
   ["error", "errorBg"],
+  ["lavender", "violetFill"],
 ];
 
 describe("brand token contrast", () => {
