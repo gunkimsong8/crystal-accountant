@@ -7,6 +7,7 @@ import { articles } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Accounting & Tax Insights",
   description: "Practical English-language guidance about accounting, tax, and doing business in Thailand.",
+  alternates: { canonical: "/insights/" },
 };
 
 export default function InsightsPage() {

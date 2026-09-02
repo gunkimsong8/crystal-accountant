@@ -6,6 +6,7 @@ import { PageHero } from "@/components/PageHero";
 export const metadata: Metadata = {
   title: "About Us",
   description: "Crystal Accounting is a Bangkok accounting and auditing firm providing one-stop accounting, tax, and compliance services for foreign-owned companies in Thailand.",
+  alternates: { canonical: "/about/" },
 };
 
 const coreValues = [

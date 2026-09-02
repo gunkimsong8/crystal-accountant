@@ -325,7 +325,7 @@ The one decorative shape is the logo mark's silhouette: `clip-path: polygon(50% 
 
 - **Corner style:** square.
 - **Article card:** Paper Tint ground, 450px minimum height, 27px padding, with a 180px lavender-to-lilac visual band carrying two clipped triangles and a Page White category chip.
-- **Value / process cards:** Page White on a tinted or hairline ground, 250–290px minimum height, 34px (process) or 35×27px (value) padding, opening with a `01`-style label and closing with 0.92rem body copy.
+- **Value / process cards:** Page White on a tinted or hairline ground, 250–290px minimum height, 34px (process) or 35×27px (value) padding, opening with a `01`-style label and closing with .9rem body copy.
 - **Shadow strategy:** none. See Elevation & Depth.
 - **Border:** none on cards; separation comes from the ground behind them or from a 1px gutter.
 
@@ -338,7 +338,7 @@ The signature component. Services are not cards — they are ledger rows. A 1px 
 - **Style:** Paper Tint fill, transparent 1px border with only the bottom edge coloured, `0` radius, 50px minimum height, 12px padding. The field reads as a ruled line on tinted paper rather than a box.
 - **Focus:** ground flips to Page White and all four borders become Crystal Violet; the native outline is suppressed in favour of the system focus ring.
 - **Label:** 0.84rem Montserrat 600 Slate Grey-Blue (the Action step), stacked 8px above the field, with the required asterisk marked `aria-hidden` and the requirement carried by the `required` attribute.
-- **Error:** a `role="alert"` panel in Correction Red on Correction Wash at 0.82rem, naming the failure and offering the firm's email as the recovery path.
+- **Error:** a `role="alert"` panel in Correction Red on Correction Wash at .84rem, naming the failure and offering the firm's email as the recovery path.
 
 ### Fee table
 
@@ -357,10 +357,10 @@ The only floating element: a fixed, centred `min(760px, 100% - 32px)` Page White
 ### Do
 
 - **Do** separate with a 1px rule before reaching for a card. The service list, the FAQ, the fee tables, the difference items, and the inclusion lists are all hairline-ruled rows, and a new list should be too.
-- **Do** alternate grounds down the page: Page White → Paper Tint → Ledger Navy → Page White. Every page closes on the Broadcast Violet CTA band.
+- **Do** alternate grounds down the page: Page White → Paper Tint → Ledger Navy → Page White. Most pages close on the Broadcast Violet CTA band; `/contact/` and `/privacy/` are the exceptions.
 - **Do** keep the serif at `h1`, `h2`, and pull quotes only, and set `h3` in Montserrat 600.
 - **Do** set eyebrow labels in Montserrat 700 uppercase at `.16em` / 0.76rem above the display heading. `docs/02_brand/BRAND.md` commits this device for this brand; the general craft default against kickers does not override a written brand commitment.
-- **Do** cap the measure of running copy explicitly — `ch` for long-form, px for decks — and move long-form text into `.narrow`.
+- **Do** cap the measure of running copy explicitly — `em` for long-form (38em/32em, per the Capped Measure Rule), px for decks — and move long-form text into `.narrow`.
 - **Do** derive translucency from Page White or Ledger Navy alpha, and keep the resulting overlay between 5% and 35%.
 - **Do** reach the triangle `clip-path` for any decorative mark, at a new scale or opacity.
 - **Do** theme the browser's own surfaces from the palette: text selection (Frosted Lavender ground, Ledger Navy ink), the caret and the native control accent (Crystal Violet), a 3px underline offset on every link, and the focus ring. The scrollbar is deliberately left native — every token light enough to sit on Paper Tint gives a thumb too faint to grab.

@@ -80,7 +80,7 @@ registration, statutory annual audit by a licensed CPA.
 
 Site structure in place: Home, About, Services (index plus one page per service), Pricing, Insights
 (index plus article pages), Contact, Thank You, Privacy Policy, 404. Service pages follow a fixed
-shape: problem, scope, ideal client, process, outcomes, FAQs, contact CTA.
+shape: hero, outcomes strip, what's included, process, FAQs.
 
 Editorial workflow: articles live as typed data in the repository and ship through the normal deploy,
 so publishing is a commit rather than a CMS session. Roughly one article per month is planned.
@@ -99,8 +99,9 @@ so publishing is a commit rather than a CMS session. Roughly one article per mon
   company inbox, and a thank-you destination for conversion tracking.
 - Google Analytics 4 loads only after the consent decision (`NEXT_PUBLIC_GA_ID`); a contact-form
   conversion event fires on the thank-you page.
-- SEO surface: sitemap, `robots.txt`, canonical URLs, per-page metadata, Open Graph, and Organization
-  plus service/article structured data. One clear page heading per indexable page.
+- SEO surface: sitemap, `robots.txt`, canonical URLs, per-page metadata, and Open Graph. One clear
+  page heading per indexable page. Only Article JSON-LD ships today; Organization and Service
+  structured data are not yet implemented.
 - **Decided.** Five services, in this order and under these names: Accounting & Compliance, Audit &
   Assurance, Tax Advisory, Payroll Services, and Company Setup & Assistance — one page each under
   `/services/<slug>/`, plus a public `/pricing/` page carrying the 2026 fee tables and their
@@ -161,7 +162,8 @@ so publishing is a commit rather than a CMS session. Roughly one article per mon
   targets, acceptance criteria, open decisions.
 - `public/brand/*.svg` — logo lockups extracted from the client PDF (horizontal, stacked, mark, and
   white variants).
-- `src/lib/site.ts` — real service and article copy already written and reviewed.
+- `src/lib/services.ts`, `src/lib/articles.ts`, `src/lib/fees.ts` — real service, article, and fee
+  copy already written and reviewed.
 
 **Absences future work must not fabricate:** there are no testimonials, no named client logos, no
 case studies, no press coverage, no awards, no headcount figure, no founding year, no photographs of

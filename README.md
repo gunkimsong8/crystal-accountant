@@ -29,21 +29,22 @@ The contact form shows the company email as a fallback until a form endpoint is 
 
 ## Content
 
-Service and insight content is stored in `src/lib/site.ts`. Add an article to the `articles` collection with a unique slug, date, summary, category, reading time, and content sections. Next.js generates the article page and sitemap entry during the build.
+Service copy lives in `src/lib/services.ts`, article copy in `src/lib/articles.ts`, and fee-table copy in `src/lib/fees.ts`. `src/lib/site.ts` holds `siteConfig` and re-exports `services` and `articles` for the rest of the app. Add an article to the `articles` collection with a unique slug, date, summary, category, reading time, and content sections. Next.js generates the article page and sitemap entry during the build.
 
 ## Validation and static export
 
 ```bash
+npm test
 npm run lint
 npm run build
+npx impeccable detect src/
 ```
 
-The production-ready static site is generated in `out/`. Deploy that directory to any static host with HTTPS and custom-domain support.
+`npm test` runs the Vitest suite. `npx impeccable detect src/` checks for design-system drift (for example hardcoded hex colors outside `:root`). The production-ready static site is generated in `out/`. Deploy that directory to any static host with HTTPS and custom-domain support.
 
 ## Launch checklist
 
 - Confirm the five service scopes and replace draft copy with approved content.
-- Replace placeholder branding with the final logo and CI values.
 - Confirm the canonical domain and hosting.
 - Configure and test the contact-form endpoint and recipient.
 - Have the privacy policy reviewed with confirmed provider and retention details.

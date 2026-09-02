@@ -36,7 +36,7 @@ Tracks `01_PROJECT_OVERVIEW.md`. Status: **Done** / **Partial** / **Open**. Upda
 | Hosting, domain, HTTPS | Open | §14.4 |
 | Contact form endpoint, spam, consent | Partial | `ContactForm.tsx` posts to `NEXT_PUBLIC_FORM_ENDPOINT`; unset shows an error state. Honeypot field present; no CAPTCHA or server-side filtering yet. Provider not chosen, no endpoint configured |
 | GA4 after consent, conversion event | Partial | `AnalyticsConsent.tsx` gates gtag on consent and on `NEXT_PUBLIC_GA_ID` (`anonymize_ip: true`); measurement ID not configured. `ConversionEvent.tsx` wired on the thank-you page |
-| Sitemap, robots, canonical, OG | Done | OG image from logo |
+| Sitemap, robots, canonical, OG | Done | OG image from logo; canonical URL set on every route |
 | Structured data | Partial | Article JSON-LD implemented on `/insights/[slug]`; no Organization or Service schema yet |
 
 ## §10 Quality

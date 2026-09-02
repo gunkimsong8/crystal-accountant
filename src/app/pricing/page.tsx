@@ -6,8 +6,9 @@ import { PageHero } from "@/components/PageHero";
 import { feeDisclaimer, feesUpdated, feeTables } from "@/lib/fees";
 
 export const metadata: Metadata = {
-  title: "Pricing | Accounting and Audit Service Fees",
+  title: "Pricing and Service Fees",
   description: "Published 2026 accounting, tax filing, and audit service fees for companies in Thailand. Clear, predictable monthly fees with no hidden charges.",
+  alternates: { canonical: "/pricing/" },
 };
 
 export default function PricingPage() {

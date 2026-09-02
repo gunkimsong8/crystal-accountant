@@ -1,0 +1,492 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-02T14:08:58.946Z",
+  "title": "Design System: Crystal Accounting",
+  "extensions": {
+    "colorMeta": {
+      "violet": {
+        "role": "primary",
+        "displayName": "Crystal Violet",
+        "canonical": "oklch(48.2% 0.269 285)",
+        "tonalRamp": [
+          "oklch(15% 0.269 285)",
+          "oklch(25% 0.269 285)",
+          "oklch(35% 0.269 285)",
+          "oklch(45% 0.269 285)",
+          "oklch(60% 0.269 285)",
+          "oklch(72% 0.269 285)",
+          "oklch(85% 0.269 285)",
+          "oklch(95% 0.269 285)"
+        ]
+      },
+      "violet-strong": {
+        "role": "primary",
+        "displayName": "Pressed Violet",
+        "canonical": "oklch(40.9% 0.227 285.1)",
+        "tonalRamp": [
+          "oklch(15% 0.227 285.1)",
+          "oklch(25% 0.227 285.1)",
+          "oklch(35% 0.227 285.1)",
+          "oklch(45% 0.227 285.1)",
+          "oklch(60% 0.227 285.1)",
+          "oklch(72% 0.227 285.1)",
+          "oklch(85% 0.227 285.1)",
+          "oklch(95% 0.227 285.1)"
+        ]
+      },
+      "violet-fill": {
+        "role": "primary",
+        "displayName": "Broadcast Violet",
+        "canonical": "oklch(47.5% 0.248 287.7)",
+        "tonalRamp": [
+          "oklch(15% 0.248 287.7)",
+          "oklch(25% 0.248 287.7)",
+          "oklch(35% 0.248 287.7)",
+          "oklch(45% 0.248 287.7)",
+          "oklch(60% 0.248 287.7)",
+          "oklch(72% 0.248 287.7)",
+          "oklch(85% 0.248 287.7)",
+          "oklch(95% 0.248 287.7)"
+        ]
+      },
+      "navy": {
+        "role": "neutral",
+        "displayName": "Ledger Navy",
+        "canonical": "oklch(23.6% 0.068 250.7)",
+        "tonalRamp": [
+          "oklch(15% 0.068 250.7)",
+          "oklch(25% 0.068 250.7)",
+          "oklch(35% 0.068 250.7)",
+          "oklch(45% 0.068 250.7)",
+          "oklch(60% 0.068 250.7)",
+          "oklch(72% 0.068 250.7)",
+          "oklch(85% 0.068 250.7)",
+          "oklch(95% 0.068 250.7)"
+        ]
+      },
+      "navy-deep": {
+        "role": "neutral",
+        "displayName": "Closing Navy",
+        "canonical": "oklch(19.2% 0.054 249.4)",
+        "tonalRamp": [
+          "oklch(15% 0.054 249.4)",
+          "oklch(25% 0.054 249.4)",
+          "oklch(35% 0.054 249.4)",
+          "oklch(45% 0.054 249.4)",
+          "oklch(60% 0.054 249.4)",
+          "oklch(72% 0.054 249.4)",
+          "oklch(85% 0.054 249.4)",
+          "oklch(95% 0.054 249.4)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Slate Grey-Blue",
+        "canonical": "oklch(46.4% 0.037 251.5)",
+        "tonalRamp": [
+          "oklch(15% 0.037 251.5)",
+          "oklch(25% 0.037 251.5)",
+          "oklch(35% 0.037 251.5)",
+          "oklch(45% 0.037 251.5)",
+          "oklch(60% 0.037 251.5)",
+          "oklch(72% 0.037 251.5)",
+          "oklch(85% 0.037 251.5)",
+          "oklch(95% 0.037 251.5)"
+        ]
+      },
+      "on-dark-muted": {
+        "role": "neutral",
+        "displayName": "Moonlit Slate",
+        "canonical": "oklch(81.6% 0.022 252.5)",
+        "tonalRamp": [
+          "oklch(15% 0.022 252.5)",
+          "oklch(25% 0.022 252.5)",
+          "oklch(35% 0.022 252.5)",
+          "oklch(45% 0.022 252.5)",
+          "oklch(60% 0.022 252.5)",
+          "oklch(72% 0.022 252.5)",
+          "oklch(85% 0.022 252.5)",
+          "oklch(95% 0.022 252.5)"
+        ]
+      },
+      "lavender": {
+        "role": "neutral",
+        "displayName": "Frosted Lavender",
+        "canonical": "oklch(92.9% 0.032 301.6)",
+        "tonalRamp": [
+          "oklch(15% 0.032 301.6)",
+          "oklch(25% 0.032 301.6)",
+          "oklch(35% 0.032 301.6)",
+          "oklch(45% 0.032 301.6)",
+          "oklch(60% 0.032 301.6)",
+          "oklch(72% 0.032 301.6)",
+          "oklch(85% 0.032 301.6)",
+          "oklch(95% 0.032 301.6)"
+        ]
+      },
+      "lilac": {
+        "role": "neutral",
+        "displayName": "Faceted Lilac",
+        "canonical": "oklch(80.1% 0.093 299.1)",
+        "tonalRamp": [
+          "oklch(15% 0.093 299.1)",
+          "oklch(25% 0.093 299.1)",
+          "oklch(35% 0.093 299.1)",
+          "oklch(45% 0.093 299.1)",
+          "oklch(60% 0.093 299.1)",
+          "oklch(72% 0.093 299.1)",
+          "oklch(85% 0.093 299.1)",
+          "oklch(95% 0.093 299.1)"
+        ]
+      },
+      "soft": {
+        "role": "neutral",
+        "displayName": "Paper Tint",
+        "canonical": "oklch(96.9% 0.012 301.3)",
+        "tonalRamp": [
+          "oklch(15% 0.012 301.3)",
+          "oklch(25% 0.012 301.3)",
+          "oklch(35% 0.012 301.3)",
+          "oklch(45% 0.012 301.3)",
+          "oklch(60% 0.012 301.3)",
+          "oklch(72% 0.012 301.3)",
+          "oklch(85% 0.012 301.3)",
+          "oklch(95% 0.012 301.3)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline Lilac",
+        "canonical": "oklch(88.2% 0.038 300.8)",
+        "tonalRamp": [
+          "oklch(15% 0.038 300.8)",
+          "oklch(25% 0.038 300.8)",
+          "oklch(35% 0.038 300.8)",
+          "oklch(45% 0.038 300.8)",
+          "oklch(60% 0.038 300.8)",
+          "oklch(72% 0.038 300.8)",
+          "oklch(85% 0.038 300.8)",
+          "oklch(95% 0.038 300.8)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "Page White",
+        "canonical": "oklch(100% 0 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0 89.9)",
+          "oklch(25% 0 89.9)",
+          "oklch(35% 0 89.9)",
+          "oklch(45% 0 89.9)",
+          "oklch(60% 0 89.9)",
+          "oklch(72% 0 89.9)",
+          "oklch(85% 0 89.9)",
+          "oklch(95% 0 89.9)"
+        ]
+      },
+      "error": {
+        "role": "tertiary",
+        "displayName": "Correction Red",
+        "canonical": "oklch(42.1% 0.127 24.4)",
+        "tonalRamp": [
+          "oklch(15% 0.127 24.4)",
+          "oklch(25% 0.127 24.4)",
+          "oklch(35% 0.127 24.4)",
+          "oklch(45% 0.127 24.4)",
+          "oklch(60% 0.127 24.4)",
+          "oklch(72% 0.127 24.4)",
+          "oklch(85% 0.127 24.4)",
+          "oklch(95% 0.127 24.4)"
+        ]
+      },
+      "error-bg": {
+        "role": "tertiary",
+        "displayName": "Correction Wash",
+        "canonical": "oklch(96.7% 0.016 17.4)",
+        "tonalRamp": [
+          "oklch(15% 0.016 17.4)",
+          "oklch(25% 0.016 17.4)",
+          "oklch(35% 0.016 17.4)",
+          "oklch(45% 0.016 17.4)",
+          "oklch(60% 0.016 17.4)",
+          "oklch(72% 0.016 17.4)",
+          "oklch(85% 0.016 17.4)",
+          "oklch(95% 0.016 17.4)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The single h1 per page. Frank Ruhl Libre 500 only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Every h2: section openers, fee-table titles, footer CTA."
+      },
+      "quote": {
+        "displayName": "Quote",
+        "purpose": "The statement panel's pull quote — the only serif at book weight."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Every h3, always Montserrat 600. The serif is never used here."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "The deck under an h1, capped at 590-670px."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running copy at 1.7 line-height; 1.03rem in long-form."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Eyebrows, table column heads, card numbers. Uppercase, .16em."
+      },
+      "action": {
+        "displayName": "Action",
+        "purpose": "Button and text-link labels."
+      }
+    },
+    "shadows": [
+      {
+        "name": "floating-notice",
+        "value": "0 12px 45px rgba(0,31,61,.17)",
+        "purpose": "The only shadow in the system, on the fixed consent banner — the one element that genuinely floats. Tinted from Ledger Navy, never black."
+      }
+    ],
+    "motion": [
+      {
+        "name": "selection",
+        "value": "::selection { background: var(--lavender); color: var(--navy) }",
+        "purpose": "Text selection is themed from the palette; so are the caret and native control accent (Crystal Violet) and a 3px link underline offset."
+      },
+      {
+        "name": "state",
+        "value": "0.2s ease",
+        "purpose": "Every state change: button ground, row ground, nav underline wipe, mark travel. Nothing in the system animates for longer."
+      },
+      {
+        "name": "lift",
+        "value": "translateY(-2px)",
+        "purpose": "Button hover rise."
+      },
+      {
+        "name": "mark-travel",
+        "value": "translate(3px, -3px)",
+        "purpose": "Text-link trailing mark on hover, tracking the glyph's own diagonal."
+      },
+      {
+        "name": "rule-wipe",
+        "value": "scaleX(0) -> scaleX(1), transform-origin: left",
+        "purpose": "Nav active/hover underline."
+      },
+      {
+        "name": "reduced",
+        "value": "transition-duration: .01ms",
+        "purpose": "Under prefers-reduced-motion every transition collapses and smooth scrolling is disabled. All motion here is state easing, so collapsing it preserves every state change."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tablet",
+        "value": "900px"
+      },
+      {
+        "name": "phone",
+        "value": "620px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The violet call to action on any light ground.",
+      "html": "<button class=\"ds-btn-primary\">Talk to our team <span aria-hidden=\"true\">↗</span></button>",
+      "css": ".ds-btn-primary{align-items:center;background:var(--violet,#5E17EB);border:1px solid var(--violet,#5E17EB);color:var(--white,#FFFFFF);cursor:pointer;display:inline-flex;font-family:var(--font-body,Montserrat,system-ui,sans-serif);font-size:.84rem;font-weight:700;gap:28px;justify-content:center;letter-spacing:.03em;min-height:54px;padding:16px 25px;border-radius:0;transition:background .2s ease,border-color .2s ease,transform .2s ease}.ds-btn-primary:hover{background:var(--violet-strong,#4A11BC);border-color:var(--violet-strong,#4A11BC);transform:translateY(-2px)}.ds-btn-primary:focus-visible{outline:3px solid var(--violet,#5E17EB);outline-offset:3px}.ds-btn-primary:disabled{cursor:wait;opacity:.65}"
+    },
+    {
+      "name": "Light Button",
+      "kind": "button",
+      "refersTo": "button-light",
+      "description": "The primary action on a navy or violet ground.",
+      "html": "<div class=\"ds-dark-stage\"><button class=\"ds-btn-light\">Start a conversation <span aria-hidden=\"true\">↗</span></button></div>",
+      "css": ".ds-dark-stage{background:var(--navy,#001F3D);padding:28px}.ds-btn-light{align-items:center;background:var(--white,#FFFFFF);border:1px solid var(--white,#FFFFFF);color:var(--navy,#001F3D);cursor:pointer;display:inline-flex;font-family:var(--font-body,Montserrat,system-ui,sans-serif);font-size:.84rem;font-weight:700;gap:28px;justify-content:center;letter-spacing:.03em;min-height:54px;padding:16px 25px;border-radius:0;transition:background .2s ease,border-color .2s ease,transform .2s ease}.ds-btn-light:hover{background:var(--lavender,#EBE3FA);border-color:var(--lavender,#EBE3FA);transform:translateY(-2px)}.ds-btn-light:focus-visible{outline:3px solid var(--white,#FFFFFF);outline-offset:3px}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "The secondary action, only ever on a dark ground.",
+      "html": "<div class=\"ds-dark-stage2\"><button class=\"ds-btn-ghost\">Explore services <span aria-hidden=\"true\">→</span></button></div>",
+      "css": ".ds-dark-stage2{background:var(--navy,#001F3D);padding:28px}.ds-btn-ghost{align-items:center;background:transparent;border:1px solid rgba(255,255,255,.4);color:var(--white,#FFFFFF);cursor:pointer;display:inline-flex;font-family:var(--font-body,Montserrat,system-ui,sans-serif);font-size:.84rem;font-weight:700;gap:28px;justify-content:center;letter-spacing:.03em;min-height:54px;padding:16px 25px;border-radius:0;transition:background .2s ease,border-color .2s ease,transform .2s ease}.ds-btn-ghost:hover{background:rgba(255,255,255,.1);border-color:var(--white,#FFFFFF)}"
+    },
+    {
+      "name": "Text Link",
+      "kind": "custom",
+      "refersTo": "text-link",
+      "description": "The inline forward action: violet, underlined in currentColor, with a mark that travels on hover.",
+      "html": "<a class=\"ds-text-link\" href=\"#\">Why Crystal Accounting <span aria-hidden=\"true\">↗</span></a>",
+      "css": ".ds-text-link{align-items:center;border-bottom:1px solid currentColor;color:var(--violet,#5E17EB);display:inline-flex;font-family:var(--font-body,Montserrat,system-ui,sans-serif);font-size:.84rem;font-weight:700;gap:22px;letter-spacing:.04em;padding-bottom:4px;text-decoration:none}.ds-text-link span{transition:transform .2s}.ds-text-link:hover span{transform:translate(3px,-3px)}.ds-text-link:focus-visible{outline:3px solid var(--violet,#5E17EB);outline-offset:3px}"
+    },
+    {
+      "name": "Primary Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Header links in an 84px bar; a 2px violet rule wipes in from the left on hover and active.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\">About</a><a href=\"#\" class=\"is-active\">Services</a><a href=\"#\">Pricing</a><a href=\"#\">Insights</a></nav>",
+      "css": ".ds-nav{align-items:center;background:var(--white,#FFFFFF);border-bottom:1px solid rgba(0,31,61,.08);display:flex;gap:34px;height:84px;padding:0 8px}.ds-nav a{color:var(--muted,#4A5B6E);font-family:var(--font-body,Montserrat,system-ui,sans-serif);font-size:.84rem;font-weight:600;padding:32px 0 29px;position:relative;text-decoration:none}.ds-nav a::after{background:var(--violet,#5E17EB);bottom:23px;content:\"\";height:2px;left:0;position:absolute;transform:scaleX(0);transform-origin:left;transition:transform .2s;width:100%}.ds-nav a:hover::after,.ds-nav a.is-active::after{transform:scaleX(1)}.ds-nav a:focus-visible{outline:3px solid var(--violet,#5E17EB);outline-offset:3px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "A ruled line on tinted paper, not a box. Resting edge is Slate Grey-Blue; focus flips the ground to white and the whole border to violet.",
+      "html": "<label class=\"ds-field\">Work email <span aria-hidden=\"true\">*</span><input type=\"email\" placeholder=\"you@company.com\" /></label>",
+      "css": ".ds-field{color:var(--muted,#4A5B6E);display:grid;font-family:var(--font-body,Montserrat,system-ui,sans-serif);font-size:.84rem;font-weight:600;gap:8px;max-width:320px}.ds-field input{background:var(--soft,#F6F3FC);border:1px solid transparent;border-bottom-color:var(--muted,#4A5B6E);border-radius:0;caret-color:var(--violet,#5E17EB);color:var(--navy,#001F3D);font:inherit;font-size:1rem;font-weight:400;min-height:50px;padding:12px;width:100%}.ds-field input:focus{background:var(--white,#FFFFFF);border-color:var(--violet,#5E17EB);outline:0}.ds-field input:focus-visible{outline:3px solid var(--violet,#5E17EB);outline-offset:3px}"
+    },
+    {
+      "name": "Service Row",
+      "kind": "custom",
+      "refersTo": "service-row",
+      "description": "The signature component. Services are hairline-ruled ledger rows, not cards; hover lifts the ground and nothing moves.",
+      "html": "<div class=\"ds-rows\"><article class=\"ds-row\"><span class=\"ds-row-num\">01</span><div><h3>Accounting &amp; Compliance</h3><p>Monthly bookkeeping, VAT and withholding filings, and statutory reporting kept on schedule.</p></div></article><article class=\"ds-row\"><span class=\"ds-row-num\">02</span><div><h3>Audit &amp; Assurance</h3><p>Statutory annual audit by a licensed CPA, planned early so year-end is not a scramble.</p></div></article></div>",
+      "css": ".ds-rows{background:var(--soft,#F6F3FC);border-top:1px solid var(--line,#DCD3EE);font-family:var(--font-body,Montserrat,system-ui,sans-serif)}.ds-row{border-bottom:1px solid var(--line,#DCD3EE);display:grid;gap:55px;grid-template-columns:50px 1fr;padding:42px 20px 42px 0;transition:background .2s}.ds-row:hover{background:var(--white,#FFFFFF)}.ds-row-num{color:var(--violet,#5E17EB);font-size:.69rem;font-weight:700;letter-spacing:.1em;padding-top:7px}.ds-row h3{color:var(--navy,#001F3D);font-size:1.6rem;font-weight:600;letter-spacing:-.01em;line-height:1.2;margin:0}.ds-row p{color:var(--muted,#4A5B6E);line-height:1.7;margin:8px 0 0}"
+    },
+    {
+      "name": "Article Card",
+      "kind": "card",
+      "refersTo": "article-card",
+      "description": "Paper Tint card with a lavender-to-lilac visual band carrying two clipped triangles and a white category chip.",
+      "html": "<article class=\"ds-card\"><div class=\"ds-card-visual\"><span>Tax</span></div><div class=\"ds-card-body\"><p class=\"ds-card-meta\">3 September 2026 · 5 min read</p><h3>What foreign owners get wrong about Thai VAT</h3><p>The filings that catch new companies out, and the deadlines that decide the penalty.</p></div></article>",
+      "css": ".ds-card{background:var(--soft,#F6F3FC);display:flex;flex-direction:column;font-family:var(--font-body,Montserrat,system-ui,sans-serif);max-width:330px}.ds-card-visual{align-items:flex-end;background:linear-gradient(135deg,var(--lavender,#EBE3FA),var(--lilac,#C6B1F2));display:flex;height:180px;overflow:hidden;padding:18px;position:relative}.ds-card-visual::before,.ds-card-visual::after{background:rgba(94,23,235,.12);clip-path:polygon(50% 0,100% 100%,0 100%);content:\"\";height:150px;position:absolute;right:-55px;top:-55px;width:150px}.ds-card-visual::after{right:20px;top:40px}.ds-card-visual span{background:var(--white,#FFFFFF);color:var(--violet,#5E17EB);font-size:.7rem;font-weight:700;letter-spacing:.1em;padding:7px 10px;text-transform:uppercase;z-index:1}.ds-card-body{display:flex;flex:1;flex-direction:column;padding:27px}.ds-card-meta{color:var(--violet,#5E17EB);font-size:.7rem;font-weight:600;letter-spacing:.05em;margin:0;text-transform:uppercase}.ds-card-body h3{color:var(--navy,#001F3D);font-size:1.4rem;font-weight:600;letter-spacing:-.01em;line-height:1.2;margin:13px 0}.ds-card-body p:not(.ds-card-meta){color:var(--muted,#4A5B6E);font-size:.9rem;line-height:1.7;margin:0}"
+    },
+    {
+      "name": "Disclosure (FAQ)",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Hairline-ruled details stack; the violet plus rotates 45 degrees into a cross when open.",
+      "html": "<div class=\"ds-faq\"><details open><summary>Do you file VAT monthly?<span aria-hidden=\"true\">+</span></summary><p>Yes. PP30 is filed monthly, and we prepare and submit it from your bookkeeping records.</p></details><details><summary>Who signs the statutory audit?<span aria-hidden=\"true\">+</span></summary><p>A licensed Thai CPA. We plan the audit early so year-end is not a scramble.</p></details></div>",
+      "css": ".ds-faq{font-family:var(--font-body,Montserrat,system-ui,sans-serif);max-width:520px}.ds-faq details{border-top:1px solid var(--line,#DCD3EE)}.ds-faq details:last-child{border-bottom:1px solid var(--line,#DCD3EE)}.ds-faq summary{align-items:center;color:var(--navy,#001F3D);cursor:pointer;display:flex;font-size:1.15rem;font-weight:600;justify-content:space-between;list-style:none;padding:27px 0}.ds-faq summary::-webkit-details-marker{display:none}.ds-faq summary span{color:var(--violet,#5E17EB);font-size:1.6rem;font-weight:400;transition:transform .2s}.ds-faq details[open] summary span{transform:rotate(45deg)}.ds-faq details p{color:var(--muted,#4A5B6E);line-height:1.7;margin:0;padding:0 40px 28px 0}.ds-faq summary:focus-visible{outline:3px solid var(--violet,#5E17EB);outline-offset:3px}"
+    },
+    {
+      "name": "Eyebrow Label",
+      "kind": "chip",
+      "refersTo": "eyebrow-label",
+      "description": "The brand's committed kicker: Montserrat 700 uppercase at .16em, 26px above its heading.",
+      "html": "<div class=\"ds-eyebrow-block\"><p class=\"ds-eyebrow\">What we do</p><h2>Essential support, handled with care.</h2></div>",
+      "css": ".ds-eyebrow-block{max-width:520px}.ds-eyebrow{color:var(--violet,#5E17EB);font-family:var(--font-body,Montserrat,system-ui,sans-serif);font-size:.76rem;font-weight:700;letter-spacing:.16em;margin:0 0 26px;text-transform:uppercase}.ds-eyebrow-block h2{color:var(--navy,#001F3D);font-family:var(--font-display,\"Frank Ruhl Libre\",Georgia,serif);font-size:2.6rem;font-weight:500;letter-spacing:-.015em;line-height:1.08;margin:0}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Cut-Glass Ledger",
+    "overview": "Two objects gave this system its character: a crystal - faceted, hard-edged, colourless until light hits it - and a ruled accounting ledger. Everything the interface draws comes from one of the two. From the crystal: zero corner radius, a single triangular silhouette lifted straight out of the logo mark, and violet appearing only where light should catch. From the ledger: hairline rules instead of boxes, tabular figures, wide-tracked uppercase labels, and a page that breathes in large, regular intervals rather than in cards.\n\nThe result is quiet on purpose. This firm sells predictability to owners who cannot read Thai statute, so the surface never performs. There is exactly one shadow in the entire system, no rounded anything, no icon library, and no ornament other than the triangle. Confidence is carried by the size of the serif headlines, the flatness of the grounds behind them, and the amount of empty space the layout is willing to spend. Where a competitor would add a card, this system draws a 1px line and moves on.\n\nThe client rejected, in writing, purple-to-pink gradients, glassmorphism, dense dashboard layouts, side-tab navigation, continuous-scroll gimmicks, long text over busy photography, and decorative italic serif kickers. Those are binding, not stylistic preferences.",
+    "keyCharacteristics": [
+      "Zero border radius everywhere; native inputs are explicitly reset to 0",
+      "1px hairlines are the primary separator - cards are the exception, not the structure",
+      "Four grounds only (Page White, Paper Tint, Ledger Navy, Broadcast Violet), alternating down the page",
+      "Oversized serif headlines against 0.76rem wide-tracked uppercase labels; no mid-sized display type",
+      "One decorative shape: the logo mark's triangle, as a clip-path",
+      "Flat by default - a single shadow exists, on the one element that genuinely floats",
+      "No icon set: direction and completion are set as typographic marks in the body face"
+    ],
+    "rules": [
+      {
+        "name": "The No-Black Rule",
+        "body": "Ledger Navy is the darkest ink in the system. #000, and any grey mixed from it, never appears - not in text, not in a border, not inside a shadow's hue.",
+        "section": "colors"
+      },
+      {
+        "name": "The Alternating Ground Rule",
+        "body": "A section stands on exactly one of the four grounds, and no two consecutive sections share one. Tint is rhythm, not decoration; if two sections in a row would both be tinted, one of them is wrong.",
+        "section": "colors"
+      },
+      {
+        "name": "The Alpha-Overlay Rule",
+        "body": "Depth on a dark ground comes from Page White at 5-35% alpha and from Ledger Navy at 8-17% alpha on light grounds - never from a new hue, never from a shadow. These alphas are derivations of two palette tokens, not additional colours.",
+        "section": "colors"
+      },
+      {
+        "name": "The Struck-Match Rule",
+        "body": "Crystal Violet is never a background for more than a label-sized area. When violet has to fill a region, it becomes Broadcast Violet and the region becomes a full-bleed band.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two-Voice Rule",
+        "body": "Frank Ruhl Libre is permitted at h1, h2, and blockquote. Nowhere else - h3 is Montserrat 600, and so is every heading inside the footer and the fee tables, which override the family explicitly. A serif h3 is a bug.",
+        "section": "typography"
+      },
+      {
+        "name": "The Wide-Label Rule",
+        "body": "Any type set below 0.84rem is a label: Montserrat 700, uppercase, .16em tracking, and no more than a few words. Reading copy never goes below 0.84rem. If a paragraph wants to be 0.7rem, the paragraph is wrong, not the scale.",
+        "section": "typography"
+      },
+      {
+        "name": "The Capped Measure Rule",
+        "body": "Running copy carries an explicit maximum - a max-width in ch for long-form, in px for decks. Nothing is allowed to run the full 1180px container as a paragraph.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tracking Floor Rule",
+        "body": "Negative tracking is -0.015em for the serif and -0.01em for sans titles. Tighter than that reads as a logo, not a headline.",
+        "section": "typography"
+      },
+      {
+        "name": "The Percent-Gutter Rule",
+        "body": "Two-column splits use a percentage gap (10%), never a fixed one. The trench is a proportion of the page, not a constant.",
+        "section": "layout"
+      },
+      {
+        "name": "The Reading-Width Rule",
+        "body": "Long-form text moves into .narrow (760px). It is never set in .shell.",
+        "section": "layout"
+      },
+      {
+        "name": "The One-Shadow Rule",
+        "body": "There is one shadow in the system and it belongs to the consent banner. A card, a panel, a table, a hero, or a hover state that wants a shadow gets a ground change or a hairline instead.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Hairline Rule",
+        "body": "1px is the only border weight on a light ground. A divider is 1px solid Hairline Lilac; a divider on navy is 1px solid Page White at 14-22% alpha. There is no 2px, 3px, or accent border anywhere in the system - including on the left edge of a callout.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Zero-Radius Rule",
+        "body": "Radius is 0. The two circular badges are the whole exception list, and both are glyph containers, not surfaces.",
+        "section": "shapes"
+      },
+      {
+        "name": "The One-Shape Rule",
+        "body": "The triangle is the only decorative geometry. If a page needs a mark, it uses the triangle at a new scale or opacity - it does not introduce a second shape.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do separate with a 1px rule before reaching for a card. The service list, the FAQ, the fee tables, the difference items, and the inclusion lists are all hairline-ruled rows, and a new list should be too.",
+      "Do alternate grounds down the page: Page White -> Paper Tint -> Ledger Navy -> Page White. Every page closes on the Broadcast Violet CTA band.",
+      "Do keep the serif at h1, h2, and pull quotes only, and set h3 in Montserrat 600.",
+      "Do set eyebrow labels in Montserrat 700 uppercase at .16em / 0.76rem above the display heading. docs/02_brand/BRAND.md commits this device for this brand; the general craft default against kickers does not override a written brand commitment.",
+      "Do cap the measure of running copy explicitly - ch for long-form, px for decks - and move long-form text into .narrow.",
+      "Do derive translucency from Page White or Ledger Navy alpha, and keep the resulting overlay between 5% and 35%.",
+      "Do reach the triangle clip-path for any decorative mark, at a new scale or opacity.",
+      "Do theme the browser's own surfaces from the palette: selection, caret, native control accent, and focus ring.",
+      "Do use --muted (6.35:1 on Paper Tint) for a control's resting edge; --line is a divider weight, not an affordance weight."
+    ],
+    "donts": [
+      "Don't add a border radius. Not on buttons, not on cards, not on inputs, not \"just 4px\".",
+      "Don't put a coloured border on one side of a callout, card, or list item. That side-tab is on the client's written reject list and the detector fails the build for it.",
+      "Don't animate padding, margin, width, or height. Hover states change ground colour or transform, and nothing else.",
+      "Don't add a shadow. The consent banner owns the only one.",
+      "Don't introduce a gradient across hues. The two gradients that exist stay inside one family (violet->violet, lavender->lilac) and neither carries text.",
+      "Don't introduce glassmorphism, backdrop blur, side navigation, scroll-jacking, or text set over busy photography - all four are on the client's written reject list.",
+      "Don't set reading copy below 0.84rem, and don't set a label above it.",
+      "Don't introduce a second decorative shape, a rotated square, or an organic blob.",
+      "Don't use #000 or a black-mixed grey anywhere, including inside rgba().",
+      "Don't add an icon library. This system has no icons; direction and completion are typographic marks in the body face, and a new mark should be one too."
+    ]
+  }
+}

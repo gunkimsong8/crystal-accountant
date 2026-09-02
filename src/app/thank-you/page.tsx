@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ConversionEvent } from "@/components/ConversionEvent";
 
-export const metadata: Metadata = { title: "Thank You", robots: { index: false, follow: false } };
+export const metadata: Metadata = {
+  title: "Thank You",
+  robots: { index: false, follow: false },
+  alternates: { canonical: "/thank-you/" },
+};
 
 export default function ThankYouPage() {
   return (

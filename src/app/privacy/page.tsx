@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/PageHero";
 import { siteConfig } from "@/lib/site";
 
-export const metadata: Metadata = { title: "Privacy Policy", description: "How Crystal Accounting handles information submitted through this website." };
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description: "How Crystal Accounting handles information submitted through this website.",
+  alternates: { canonical: "/privacy/" },
+};
 
 export default function PrivacyPage() {
   return (
