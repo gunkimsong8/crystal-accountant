@@ -75,7 +75,7 @@ p { line-height: 1.7; }
 .homeHero { background: var(--navy); color: var(--white); overflow: hidden; padding: 100px 0 0; position: relative; }
 .heroGrid { align-items: center; display: grid; gap: 70px; grid-template-columns: 1.15fr .85fr; min-height: 550px; position: relative; z-index: 2; }
 .heroCopy h1 { font-size: clamp(3.5rem, 6vw, 5.65rem); max-width: 800px; }
-.heroCopy h1 em { color: var(--lilac); font-family: var(--font-display); font-weight: 400; }
+.heroCopy h1 em { color: var(--lilac); font-family: var(--font-display); font-style: normal; font-weight: 400; }
 .heroLead { color: var(--lavender); font-size: 1.15rem; margin-top: 27px; max-width: 590px; }
 .heroGraphic { height: 440px; position: relative; }
 .crystal { border: 1px solid rgba(255,255,255,.22); height: 270px; position: absolute; transform: rotate(45deg); width: 270px; }
