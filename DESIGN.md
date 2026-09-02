@@ -283,7 +283,7 @@ This system is flat, and aggressively so. Depth is built from four devices, in t
 
 **The One-Shadow Rule.** There is one shadow in the system and it belongs to the consent banner. A card, a panel, a table, a hero, or a hover state that wants a shadow gets a ground change or a hairline instead.
 
-**The Hairline Rule.** 1px is the only border weight on a light ground. A divider is `1px solid` Hairline Lilac; a divider on navy is `1px solid` Page White at 14–22% alpha. There is no 2px, 3px, or accent border anywhere in the system — including on the left edge of a callout.
+**The Hairline Rule.** 1px is the only border weight on a light ground. A divider is `1px solid` Hairline Lilac; a divider on navy is `1px solid` Page White at 14–22% alpha. There is no 2px, 3px, or accent border anywhere in the system — including on the left edge of a callout. A gutter can stand in for a border: the value grid sets a 1px `gap` over a Hairline Lilac ground, so the dividers between its Page White cards are the ground showing through. A card grid that uses a 1px gutter must give the container that ground, or the dividers do not exist.
 
 ## Shapes
 
@@ -346,7 +346,7 @@ Collapsed borders, no vertical rules, a 1px Hairline Lilac rule under every row.
 
 ### Disclosure (FAQ)
 
-A `<details>` stack with a 1px rule above each item and below the last. The summary is 1.12rem Montserrat 600 with the native marker removed and a Crystal Violet `+` pushed to the far right, which rotates 45° into a `×` when open. Answers are Slate Grey-Blue with 40px of right padding so they never run under the marker.
+A `<details>` stack with a 1px rule above each item and below the last. The summary is 1.15rem Montserrat 600 with the native marker removed and a Crystal Violet `+` pushed to the far right, which rotates 45° into a `×` over 0.2s when open. The marker is Montserrat 400 — the lightest weight this project loads. Answers are Slate Grey-Blue with 40px of right padding so they never run under the marker.
 
 ### Consent banner
 
@@ -363,7 +363,7 @@ The only floating element: a fixed, centred `min(760px, 100% - 32px)` Page White
 - **Do** cap the measure of running copy explicitly — `ch` for long-form, px for decks — and move long-form text into `.narrow`.
 - **Do** derive translucency from Page White or Ledger Navy alpha, and keep the resulting overlay between 5% and 35%.
 - **Do** reach the triangle `clip-path` for any decorative mark, at a new scale or opacity.
-- **Do** theme the browser's own surfaces from the palette: selection, caret, native control accent, and focus ring.
+- **Do** theme the browser's own surfaces from the palette: text selection (Frosted Lavender ground, Ledger Navy ink), the caret and the native control accent (Crystal Violet), a 3px underline offset on every link, and the focus ring. The scrollbar is deliberately left native — every token light enough to sit on Paper Tint gives a thumb too faint to grab.
 - **Do** use `--muted` (6.35:1 on Paper Tint) for a control's resting edge; `--line` is a divider weight, not an affordance weight.
 
 ### Don't
