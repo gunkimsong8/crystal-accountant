@@ -234,6 +234,23 @@ p { line-height: 1.7; }
 .factList { list-style: none; padding-top: 44px; }
 .factList li { border-bottom: 1px solid var(--line); color: var(--muted); font-size: 1rem; padding: 16px 0; }
 
+.feeIndex { display: flex; flex-wrap: wrap; gap: 12px 28px; padding: 36px 0 0; }
+.feeIndex a { border-bottom: 1px solid var(--violet); color: var(--violet); font-size: .84rem; font-weight: 600; padding-bottom: 3px; }
+.feeSection { padding: 80px 0; }
+.feeSection + .feeSection { border-top: 1px solid var(--line); }
+.feeSection h2 { font-size: clamp(1.9rem, 3vw, 2.6rem); }
+.feeDescription { color: var(--muted); margin-top: 22px; }
+.feeNote { color: var(--muted); font-size: .9rem; margin-top: 16px; }
+.tableScroll { overflow-x: auto; }
+.feeTable { border-collapse: collapse; min-width: 420px; width: 100%; }
+.feeTable th, .feeTable td { border-bottom: 1px solid var(--line); padding: 14px 12px; text-align: left; }
+.feeTable thead th { color: var(--violet); font-size: .74rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.feeTable tbody th { color: var(--navy); font-weight: 500; }
+.feeTable td { color: var(--navy); font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+.feeTable thead th:last-child { text-align: right; }
+.feeDisclaimer { color: var(--muted); font-size: .95rem; margin-top: 10px; }
+.feeUpdated { color: var(--muted); font-size: .78rem; letter-spacing: .06em; margin-top: 18px; text-transform: uppercase; }
+
 @media (max-width: 900px) {
   .section { padding: 85px 0; }
   .menuButton { display: block; }
@@ -262,6 +279,7 @@ p { line-height: 1.7; }
 @media (max-width: 620px) {
   .shell, .narrow { width: min(100% - 32px, 1180px); }
   .section { padding: 68px 0; }
+  .feeSection { padding: 56px 0; }
   .headerInner { height: 74px; }
   .nav { top: 74px; }
   .logo img { height: 38px; }
