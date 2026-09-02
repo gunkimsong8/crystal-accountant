@@ -4,7 +4,7 @@ import { formatDate, type Article } from "@/lib/site";
 export function ArticleCard({ article, featured = false }: { article: Article; featured?: boolean }) {
   return (
     <article className={featured ? "articleCard featured" : "articleCard"}>
-      <div className="articleVisual" aria-hidden="true">
+      <div className="articleVisual">
         <span>{article.category}</span>
       </div>
       <div className="articleBody">

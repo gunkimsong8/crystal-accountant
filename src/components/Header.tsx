@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Logo } from "./Logo";
 
 const links = [
@@ -16,6 +16,15 @@ const links = [
 export function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    if (!open) return;
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setOpen(false);
+    };
+    window.addEventListener("keydown", closeOnEscape);
+    return () => window.removeEventListener("keydown", closeOnEscape);
+  }, [open]);
 
   return (
     <header className="siteHeader">
@@ -33,16 +42,20 @@ export function Header() {
           <span />
         </button>
         <nav id="primary-navigation" className={open ? "nav open" : "nav"} aria-label="Primary navigation">
-          {links.map((link) => (
-            <Link
-              href={link.href}
-              key={link.href}
-              className={pathname.startsWith(link.href) ? "active" : undefined}
-              onClick={() => setOpen(false)}
-            >
-              {link.label}
-            </Link>
-          ))}
+          {links.map((link) => {
+            const isActive = pathname.startsWith(link.href);
+            return (
+              <Link
+                href={link.href}
+                key={link.href}
+                className={isActive ? "active" : undefined}
+                aria-current={isActive ? "page" : undefined}
+                onClick={() => setOpen(false)}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
           <Link href="/contact/" className="button buttonSmall" onClick={() => setOpen(false)}>
             Let&apos;s talk <span aria-hidden="true">↗</span>
           </Link>

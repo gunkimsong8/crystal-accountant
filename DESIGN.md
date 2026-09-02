@@ -17,27 +17,44 @@ colors:
   error: "#852828"
   error-bg: "#FFF0F0"
 typography:
+  scale:
+    micro: "0.7rem"
+    label: "0.76rem"
+    action: "0.84rem"
+    body-sm: "0.9rem"
+    body: "1rem"
+    lead: "1.15rem"
+    title-xs: "1.25rem"
+    title-sm: "1.4rem"
+    title: "1.6rem"
+    title-lg: "1.8rem"
+    title-xl: "2rem"
+    display-xs: "2.5rem"
+    display-sm: "3rem"
+    display-md: "3.4rem"
+    display-lg: "3.9rem"
+    display-xl: "4.35rem"
   display:
     fontFamily: "Frank Ruhl Libre, Georgia, serif"
-    fontSize: "clamp(3rem, 6.3vw, 5.8rem)"
+    fontSize: "clamp(3rem, 5.2vw, 4.35rem)"
     fontWeight: 500
     lineHeight: 1.08
     letterSpacing: "-0.015em"
   headline:
     fontFamily: "Frank Ruhl Libre, Georgia, serif"
-    fontSize: "clamp(2.3rem, 4.4vw, 4rem)"
+    fontSize: "clamp(2rem, 3.9vw, 3.4rem)"
     fontWeight: 500
     lineHeight: 1.08
     letterSpacing: "-0.015em"
   quote:
     fontFamily: "Frank Ruhl Libre, Georgia, serif"
-    fontSize: "clamp(2.1rem, 4vw, 3.6rem)"
+    fontSize: "clamp(2rem, 3.5vw, 3rem)"
     fontWeight: 400
     lineHeight: 1.2
     letterSpacing: "-0.015em"
   title:
     fontFamily: "Montserrat, system-ui, sans-serif"
-    fontSize: "1.45rem"
+    fontSize: "1.4rem"
     fontWeight: 600
     lineHeight: 1.2
     letterSpacing: "-0.01em"
@@ -82,7 +99,7 @@ components:
     textColor: "{colors.white}"
     typography: "{typography.action}"
     rounded: "{rounded.none}"
-    padding: "0 25px"
+    padding: "16px 25px"
     height: "54px"
   button-primary-hover:
     backgroundColor: "{colors.violet-strong}"
@@ -92,7 +109,7 @@ components:
     textColor: "{colors.navy}"
     typography: "{typography.action}"
     rounded: "{rounded.none}"
-    padding: "0 25px"
+    padding: "16px 25px"
     height: "54px"
   button-light-hover:
     backgroundColor: "{colors.lavender}"
@@ -102,14 +119,14 @@ components:
     textColor: "{colors.white}"
     typography: "{typography.action}"
     rounded: "{rounded.none}"
-    padding: "0 25px"
+    padding: "16px 25px"
     height: "54px"
   button-small:
     backgroundColor: "{colors.violet}"
     textColor: "{colors.white}"
     typography: "{typography.action}"
     rounded: "{rounded.none}"
-    padding: "0 18px"
+    padding: "12px 18px"
     height: "43px"
   text-link:
     backgroundColor: "transparent"
@@ -168,7 +185,7 @@ The client rejected, in writing, purple-to-pink gradients, glassmorphism, dense 
 - Zero border radius everywhere; native inputs are explicitly reset to `0`
 - 1px hairlines are the primary separator — cards are the exception, not the structure
 - Four grounds only (Page White, Paper Tint, Ledger Navy, Broadcast Violet), alternating down the page
-- Oversized serif headlines against 0.76rem wide-tracked uppercase labels; no mid-sized display type
+- Sixteen enumerated type steps from 0.7rem to 4.35rem; large serif headlines against 0.76rem wide-tracked uppercase labels, with nothing in between
 - One decorative shape: the logo mark's triangle, as a `clip-path`
 - Flat by default — a single shadow exists, on the one element that genuinely floats
 - No icon set: direction and completion are set as typographic marks in the body face
@@ -190,7 +207,7 @@ A colourless page with one violet that behaves like a struck match — rare, del
 - **Slate Grey-Blue** (`{colors.muted}`): secondary text on light grounds — deck copy, card body, captions, table labels, form labels — and the resting underline of a form field.
 - **Moonlit Slate** (`{colors.on-dark-muted}`): secondary text on Closing Navy. Footer links, footer address, the legal line.
 - **Frosted Lavender** (`{colors.lavender}`): body copy on navy grounds, the outcome strip behind service pages, and the hover ground of a light button.
-- **Faceted Lilac** (`{colors.lilac}`): eyebrow labels and small accents on navy, plus the light end of the article-card gradient. The on-dark counterpart to Crystal Violet.
+- **Faceted Lilac** (`{colors.lilac}`): eyebrow labels and small accents on navy, plus the light end of the article-card tint band — the system's one gradient. The on-dark counterpart to Crystal Violet.
 - **Paper Tint** (`{colors.soft}`): the alternate light section ground, the page hero, the article card, and the resting fill of every form field.
 - **Hairline Lilac** (`{colors.line}`): every 1px divider, table rule, and tag border on a light ground.
 - **Page White** (`{colors.white}`): the default ground, and the type colour on every dark or violet surface.
@@ -210,26 +227,31 @@ A colourless page with one violet that behaves like a struck match — rare, del
 **Display Font:** Frank Ruhl Libre (with Georgia, serif)
 **Body Font:** Montserrat (with system-ui, sans-serif)
 
-**Character:** A high-contrast Hebrew-Latin serif carrying only the largest type on the page, against a geometric sans that does everything else. The pairing is deliberately lopsided: the serif never appears below 2.1rem and the sans never appears above 1.75rem, so the two voices cannot be confused for one another at a glance.
+**Character:** A high-contrast Hebrew-Latin serif carrying only the largest type on the page, against a geometric sans that does everything else. The pairing is deliberately lopsided: the serif never appears below 2rem and the sans never appears above 1.8rem, so the two voices cannot be confused for one another at a glance.
+
+Every size in the product comes off one enumerated 16-step ramp (`typography.scale`), from 0.7rem to 4.35rem. There are no in-between values: a size that is not a step does not ship.
 
 ### Hierarchy
 
-- **Display** (Frank Ruhl Libre 500, `clamp(3rem, 6.3vw, 5.8rem)`, 1.08): the single `h1` on each page. Capped at 5.8rem so the longest heading — the About page's full firm description — still resolves in three lines on a wide screen.
-- **Headline** (Frank Ruhl Libre 500, `clamp(2.3rem, 4.4vw, 4rem)`, 1.08): every `h2`. Section openers, fee-table titles, footer CTA.
-- **Quote** (Frank Ruhl Libre 400, `clamp(2.1rem, 4vw, 3.6rem)`, 1.2): the statement panel's pull quote — the only place the serif appears at book weight.
-- **Title** (Montserrat 600, 1.45rem, 1.2): every `h3`. Service rows override to 1.7rem, value cards to 1.35–1.75rem, process cards to 1.6rem. The serif is never used at this size.
-- **Lead** (Montserrat 400, 1.15rem, 1.7): the deck under an `h1`, capped at 590–670px so it never runs the full container.
-- **Body** (Montserrat 400, 1rem, 1.7): running copy. Card copy drops to 0.90–0.92rem; long-form article and legal copy rises to 1.03rem.
-- **Label** (Montserrat 700, 0.76rem, `.16em`, uppercase): eyebrows, table column heads, card numbers, the fee-updated line, footer column heads. Sits 26px above the heading it introduces.
-- **Action** (Montserrat 700, 0.84rem, `.03em`): button and text-link labels, with a 22–28px gap between the label and its trailing mark.
+- **Display** (Frank Ruhl Libre 500, `clamp(3rem, 5.2vw, 4.35rem)`, 1.08): the home hero and service-page `h1`. Capped at 4.35rem (69.6px) so that even a full-sentence headline — every headline on this site is one — stays under a third of the first viewport instead of swallowing it.
+- **Display, inner pages** (`clamp(2.5rem, 4.5vw, 3.9rem)`): the `h1` on page heroes, article heroes, the contact page, and result pages. One step down, because those headings run longer.
+- **Headline** (Frank Ruhl Libre 500, `clamp(2rem, 3.9vw, 3.4rem)`, 1.08): every `h2`. Section openers, the CTA band, fee-table titles.
+- **Quote** (Frank Ruhl Libre 400, `clamp(2rem, 3.5vw, 3rem)`, 1.2): the statement panel's pull quote — the only place the serif appears at book weight.
+- **Title** (Montserrat 600, 1.4rem, 1.2): every `h3`. Service rows and process cards step up to 1.6rem, value cards to 1.8rem, and card titles down to 1.25rem. The serif is never used at this size.
+- **Lead** (Montserrat 400, 1.15rem, 1.7): every deck under a heading, capped at 590–670px so it never runs the full container.
+- **Body** (Montserrat 400, 1rem, 1.7): running copy, including long-form article and legal text. Card and secondary copy drops one step to 0.9rem.
+- **Label** (Montserrat 700, 0.76rem, `.16em`, uppercase): eyebrows, table column heads, the fee-updated line. Sits 26px above the heading it introduces. Micro-labels (card numbers, category chips, the proof strip) sit one step below at 0.7rem — the floor.
+- **Action** (Montserrat 700, 0.84rem, `.03em`): button, text-link, nav, and footer-link labels, with a 22–28px gap between a label and its trailing mark.
 
 ### Named Rules
 
 **The Two-Voice Rule.** Frank Ruhl Libre is permitted at `h1`, `h2`, and `blockquote`. Nowhere else — `h3` is Montserrat 600, and so is every heading inside the footer and the fee tables, which override the family explicitly. A serif `h3` is a bug.
 
-**The Wide-Label Rule.** Any type set below 0.84rem is a label: Montserrat 700, uppercase, `.16em` tracking, and no more than a few words. Reading copy never goes below 0.84rem. If a paragraph wants to be 0.7rem, the paragraph is wrong, not the scale.
+**The Wide-Label Rule.** Any type set below 0.84rem is a label: Montserrat 700, uppercase, wide-tracked, and no more than a few words. Reading copy never goes below 0.84rem — not in the consent notice, not in a form hint, not in the footer legal line. If a paragraph wants to be 0.7rem, the paragraph is wrong, not the scale.
 
-**The Capped Measure Rule.** Running copy carries an explicit maximum — a `max-width` in `ch` for long-form text, in px for decks. Nothing is allowed to run the full 1180px container as a paragraph.
+**The Eleven-Pixel Rule.** 0.7rem (11.2px) is the absolute floor for any text a visitor is meant to read or click, label or not. Nothing renders below it.
+
+**The Capped Measure Rule.** Running copy carries an explicit maximum — 38em (about 72 characters) for long-form body and the fee disclaimer, 32em for an article lead, and a px cap for decks. Nothing is allowed to run the full 1180px container or the full 760px reading column as a paragraph. Cap in `em`, never in `ch`: Montserrat's zero advance is 0.66em, so a `ch` cap over-counts a line of prose in this face by about a third.
 
 **The Tracking Floor Rule.** Negative tracking is `-0.015em` for the serif and `-0.01em` for sans titles. Tighter than that reads as a logo, not a headline.
 
@@ -267,7 +289,7 @@ This system is flat, and aggressively so. Depth is built from four devices, in t
 
 Nothing in this system is rounded. Buttons, cards, inputs, tags, tables, and panels all have square corners, and form controls carry an explicit `border-radius: 0` so no browser reintroduces one. The only curves are two circular badges (`50%`): the check bullet on service inclusion lists and the confirmation mark on the thank-you page.
 
-The one decorative shape is the logo mark's silhouette: `clip-path: polygon(50% 0, 100% 100%, 0 100%)`. It appears at three scales — a 570px ghost bleeding off the left edge of the difference section, a 340px pair in the home hero (one translucent, one violet), and 150px pairs inside the article-card visual. Rotated squares, circles, blobs, and organic cutouts are retired from this brand and must not return.
+The one decorative shape is the logo mark's silhouette: `clip-path: polygon(50% 0, 100% 100%, 0 100%)`. It appears at three scales — a 570px ghost bleeding off the left edge of the difference section, a 340px pair in the home hero (Page White at 8% behind, Crystal Violet at 80% in front), and 150px pairs inside the article-card visual. Every one is a flat alpha fill; none is a gradient. Rotated squares, circles, blobs, and organic cutouts are retired from this brand and must not return.
 
 ### Named Rules
 
@@ -279,17 +301,17 @@ The one decorative shape is the logo mark's silhouette: `clip-path: polygon(50% 
 
 ### Buttons
 
-- **Shape:** square (`0` radius), 54px tall, 25px horizontal padding, with a 28px gap between the label and its trailing mark.
+- **Shape:** square (`0` radius), 54px tall, 16px vertical and 25px horizontal padding, with a 28px gap between the label and its trailing mark. `min-height` governs the height; the padding is there so the label is never flush to a coloured edge.
 - **Primary:** Crystal Violet ground, Page White label, 1px border in the same violet so it can invert without shifting size.
 - **Hover / Focus:** ground moves to Pressed Violet and the button rises 2px (`translateY(-2px)`) over 0.2s. Focus is a 3px Crystal Violet outline at 3px offset — switched to Page White on navy and violet grounds so it is always visible.
 - **Light:** Page White ground, Ledger Navy label, hovering to Frosted Lavender. The primary action on any dark ground.
 - **Ghost:** transparent with a Page White 40% border, filling to 10% white on hover. The secondary action on a dark ground only.
-- **Small:** 43px tall, 18px padding, 13px label gap. Used in the header and the consent banner.
+- **Small:** 43px tall, 12px/18px padding, 13px label gap. Used in the header and the consent banner. The banner's plain-text decline carries the same 43px height so both consent choices are the same target.
 - **Disabled:** 65% opacity and a `wait` cursor; the label changes to name the in-flight action ("Sending…").
 
 ### Text link
 
-- **Style:** Crystal Violet, 0.84rem Montserrat 700, with a 1px `currentColor` underline sitting 4px below the label and a 22px gap before the trailing mark.
+- **Style:** Crystal Violet on the Action step (0.84rem Montserrat 700), with a 1px `currentColor` underline sitting 4px below the label and a 22px gap before the trailing mark.
 - **Hover:** the mark travels 3px right and 3px up (`translate(3px, -3px)`) — the only motion; the underline does not change.
 - **Light variant:** Page White on dark grounds, underline included.
 
@@ -350,9 +372,9 @@ The only floating element: a fixed, centred `min(760px, 100% - 32px)` Page White
 - **Don't** put a coloured border on one side of a callout, card, or list item. That side-tab is on the client's written reject list and the detector fails the build for it.
 - **Don't** animate `padding`, `margin`, `width`, or `height`. Hover states change ground colour or `transform`, and nothing else.
 - **Don't** add a shadow. The consent banner owns the only one.
-- **Don't** introduce a gradient across hues. The two gradients that exist stay inside one family (violet→violet, lavender→lilac) and neither carries text.
+- **Don't** introduce a gradient. Exactly one survives in the system — the article card's lavender→lilac tint band — and it carries no text. Everything else that reads as depth is a flat alpha fill.
 - **Don't** introduce glassmorphism, backdrop blur, side navigation, scroll-jacking, or text set over busy photography — all four are on the client's written reject list.
-- **Don't** set reading copy below 0.84rem, and don't set a label above it.
+- **Don't** set reading copy below 0.84rem, don't set any text below 0.7rem, and don't invent a size between two ramp steps — extend `typography.scale` or use the nearest step.
 - **Don't** introduce a second decorative shape, a rotated square, or an organic blob.
 - **Don't** use `#000` or a black-mixed grey anywhere, including inside `rgba()`.
 - **Don't** add an icon library. This system has no icons; direction and completion are typographic marks in the body face, and a new mark should be one too.

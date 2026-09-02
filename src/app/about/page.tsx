@@ -48,7 +48,7 @@ export default function AboutPage() {
         <div className="shell split">
           <div><p className="eyebrow">Vision</p><h2>To be the most trusted accounting partner for international businesses operating in Thailand.</h2></div>
           <div className="largeCopy">
-            <p className="eyebrow">Mission</p>
+            <h2 className="eyebrow">Mission</h2>
             <p>We simplify complex Thai accounting and tax regulations for foreign companies, providing clarity, compliance, and confidence to help you grow your business in Thailand.</p>
           </div>
         </div>
@@ -71,7 +71,7 @@ export default function AboutPage() {
             <ul className="tagList">{countries.map((country) => <li key={country}>{country}</li>)}</ul>
           </div>
           <div>
-            <p className="eyebrow">Industries we serve</p>
+            <h2 className="eyebrow">Industries we serve</h2>
             <ul className="factList">{industries.map((industry) => <li key={industry}>{industry}</li>)}</ul>
           </div>
         </div>
