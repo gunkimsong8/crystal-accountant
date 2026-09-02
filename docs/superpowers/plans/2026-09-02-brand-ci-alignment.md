@@ -682,8 +682,8 @@ sed -E -i '' \
   -e 's/#(aaa0ae|a99ead|d5ced9|8e8492)/var(--on-dark-muted)/g' \
   -e 's/#(403747|372f3c)/rgba(255,255,255,.14)/g' \
   -e 's/#(c9bcd7|cfc9d3|ded9e2)/var(--line)/g' \
-  -e 's/#fff0f0/var(--error-bg)/g' \
-  -e 's/#852828/var(--error)/g' \
+  -e '/^  --/!s/#fff0f0/var(--error-bg)/g' \
+  -e '/^  --/!s/#852828/var(--error)/g' \
   -e 's/linear-gradient\(135deg, #e9e1f1, #c8b2de\)/linear-gradient(135deg, var(--lavender), var(--lilac))/' \
   -e 's/rgba\(77,42,110,\.24\)/rgba(0,31,61,.24)/g' \
   -e 's/rgba\(40,20,60,\.08\)/rgba(0,31,61,.08)/g' \
