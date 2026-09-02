@@ -1,9 +1,24 @@
 import type { Metadata, Viewport } from "next";
+import { Frank_Ruhl_Libre, Montserrat } from "next/font/google";
 import { AnalyticsConsent } from "@/components/AnalyticsConsent";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
+
+const displayFont = Frank_Ruhl_Libre({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-display",
+  display: "swap",
+});
+
+const bodyFont = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-body",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -25,12 +40,12 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#2d1748",
+  themeColor: "#001F3D",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${displayFont.variable} ${bodyFont.variable}`}>
       <body>
         <a className="skipLink" href="#main-content">Skip to content</a>
         <Header />
